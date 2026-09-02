@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F7F8FC">
+    <LinearLayout
+        android:orientation="vertical" android:padding="24dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Number OCR Overlay" android:textSize="28sp" android:textStyle="bold"
+            android:textColor="#111827" android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:text="Capture numeric codes from a selected area while a video is playing."
+            android:textSize="16sp" android:textColor="#5B6472" android:layout_marginTop="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+            <LinearLayout android:orientation="vertical" android:padding="16dp"
+                android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="Required permissions" android:textStyle="bold" android:textSize="18sp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <TextView android:text="1. Allow display over other apps so the selector and controls can float over the video.\n2. Android will ask for screen-recording permission when you start capture.\n3. On Android 13+, allow notifications so the capture service can remain visible."
+                    android:textSize="14sp" android:textColor="#5B6472" android:layout_marginTop="8dp"
+                    android:layout_width="match_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.button.MaterialButton android:id="@+id/startFloatingButton"
+            android:text="Start Floating Mode" android:layout_marginTop="24dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/viewResultsButton"
+            android:text="View Results" android:layout_marginTop="8dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+        <TextView android:text="Tip: choose a tight frame around the digits. A one-second interval reduces battery use while still catching codes that remain visible briefly."
+            android:textSize="13sp" android:textColor="#6B7280" android:layout_marginTop="20dp"
+            android:layout_width="match_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
